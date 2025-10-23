@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Redirect</title>
+  <script>
+    window.onload = function() {
+      // Try opening the YouTube app
+      window.location = "vnd.youtube://www.youtube.com/@dustincormierofficial";
+      
+      // Fallback after 1 second to the browser version
+      setTimeout(function() {
+        window.location = "https://www.youtube.com/@dustincormierofficial";
+      }, 1000);
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting to YouTube...</p>
+</body>
+</html>
